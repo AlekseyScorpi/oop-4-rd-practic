@@ -110,12 +110,17 @@ public class Main {
         System.out.println(xPronounce("Inside the box was a xylophone"));
         System.out.println(xPronounce("The x ray is excellent"));
         System.out.println(xPronounce("OMG x box unboxing video x D"));
+        System.out.println(xPronounce("X i elada flex"));
     }
     public static String xPronounce(String str){
         StringBuilder string = new StringBuilder(str);
-        if (string.charAt(0) == 'x' && string.charAt(1) != ' '){
-            string.deleteCharAt(0);
-            str = "z" + string.toString();
+        if (string.charAt(0) == 'X'){
+            if (string.charAt(1) != ' ') {
+                string.deleteCharAt(0);
+                str = "z" + string.toString();
+            }else{
+                str = str.replaceFirst("X", "Cks");
+            }
         }
         while (str.contains(" x ")){
             str = str.replaceFirst(" x ", " ecks ");
