@@ -117,7 +117,7 @@ public class Main {
         if (string.charAt(0) == 'X'){
             if (string.charAt(1) != ' ') {
                 string.deleteCharAt(0);
-                str = "z" + string.toString();
+                str = "Z" + string.toString();
             }else{
                 str = str.replaceFirst("X", "Cks");
             }
